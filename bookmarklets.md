@@ -1,6 +1,6 @@
 ---
 title: Bookmarklets
-permalink: /bookmarklets
+permalink: /bookmarklets.html
 ---
 <!DOCTYPE html>
 <html>
