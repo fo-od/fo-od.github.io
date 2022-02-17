@@ -21,11 +21,11 @@ button {
     animation-delay: 1.5s;
     animation-fill-mode: backwards;
     animation-timing-function: ease;
-    box-shadow: 0 0 3px #30ffac;
+    box-shadow: 0 0 3px transparent;
 }
 @keyframes btn {
-  from {border: 2px solid transparent; color: transparent;}
-  to {border: 2px solid #30ffac; color: white;}
+  from {border: 2px solid transparent; color: transparent; box-shadow: 0 0 3px transparent;}
+  to {border: 2px solid #30ffac; color: white; box-shadow: 0 0 3px #30ffac;}
 }
 button:hover {
   background-color: #30ffac;
