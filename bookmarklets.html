@@ -12,19 +12,59 @@ body {
 button {
     font-family: 'Roboto Mono';font-size: 18px;
     background-color: transparent;
-    transition-duration: 0.4s;
     color: white; 
     border: 2px solid #30ffac;
     border-radius: 5px;
+    transition-duration: 0.4s;
+    animation-duration: 0.8s;
+    animation-name: btn;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease;
+}
+@keyframes btn {
+  from {border: 2px solid transparent; color: transparent; left: -600px;}
+  to {border: 2px solid #30ffac; color: white; left: 0px;}
 }
 button:hover {
   background-color: #30ffac;
   transition-duration: 1;
   color: #1f1f1f;
 }
-header {
-    transition-delay: 0.6s;
+
+h3 {
+    animation-duration: 1s;
+    animation-name: yuh;
+    position: relative;
+    animation-timing-function: ease;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
 }
+h5 {
+    animation-duration: 1s;
+    animation-name: yuh;
+    animation-timing-function: ease;
+    position: relative;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+a {
+    animation-duration: 1s;
+    animation-name: bm;
+    animation-timing-function: ease;
+    position: relative;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+@keyframes bm {
+  from {color: transparent;}
+  to {color: #30ffac;}
+}
+@keyframes yuh {
+  from {color: transparent;}
+  to {color: white;}
+}
+
 </style>
 </head>
 <body>
@@ -32,12 +72,12 @@ header {
    <span
     class="typer"
     id="header1"
-    data-words="Bookmarklets :>"
+    data-words="Bookmarklets"
     data-colors="#ffffff"
-    data-delay="50"
+    data-delay="100"
     data-loop="1">
   </span>
-  <span class="cursor" data-owner="header1" data-cursor-display="|"></span>
+  <span class="cursor" data-owner="header1"></span>
 </h1>
 <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 <h3>More stuff will be added!</h3>
