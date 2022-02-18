@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head><link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
 <script src="https://kit.fontawesome.com/ad2803aee4.js" crossorigin="anonymous"></script>
 <style>
 body {
@@ -15,7 +16,7 @@ button {
     border: 2px solid #30ffac;
     border-radius: 5px;
     transition-duration: 0.4s;
-    animation-duration: 0.8s;
+    animation-duration: 2.5s;
     animation-name: btn;
     animation-delay: 2s;
     animation-fill-mode: backwards;
@@ -26,10 +27,10 @@ button:hover {
   background-color: #30ffac;
   transition-duration: 1;
   color: #1f1f1f;
-  box-shadow: 0 0 7px #30ffac;
+  box-shadow: 0 0 8px #30ffac;
 }
 a {
-    animation-duration: 1s;
+    animation-duration: 2.5s;
     animation-name: link;
     animation-timing-function: ease;
     position: relative;
@@ -41,20 +42,24 @@ a {
 a:hover {
     text-shadow: 0 0 8px #30ffac;
 }
-@keyframes link {
-  from {color: transparent; text-shadow: 0 0 0px transparent;}
-  to {color: #30ffac; text-shadow: 0 0 5px #30ffac;}
-}
 @keyframes btn {
-  from {border: 2px solid transparent; color: transparent; box-shadow: 0 0 3px transparent;}
-  to {border: 2px solid #30ffac; color: white; box-shadow: 0 0 3px #30ffac;}
+  0% {border: 2px solid transparent; color: transparent; box-shadow: 0 0 3px transparent;}
+  25% {border: 2px solid #30ffac; color: white; box-shadow: 0 0 3px #30ffac;}
+  50% {box-shadow: 0 0 10px #30ffac;}
+  100% {box-shadow: 0 0 3px #30ffac;}
+}
+@keyframes link {
+   0% {color: transparent; text-shadow: 0 0 0px transparent;}
+  25% {color: #30ffac; text-shadow: 0 0 5px #30ffac;}
+  50% {color: #30ffac; text-shadow: 0 0 15px #30ffac;}
+  100% {color: #30ffac; text-shadow: 0 0 5px #30ffac;}
 }
 h1 {
     color: #30ffac;
     text-shadow: 0 0 7px #30ffac;
 }
 h2 {
-    animation-duration: 1s;
+    animation-duration: 2.5s;
     animation-name: yuh;
     position: relative;
     animation-timing-function: ease;
@@ -63,7 +68,7 @@ h2 {
     text-shadow: 0 0 3px #ffffff;
 }
 h3 {
-    animation-duration: 1s;
+    animation-duration: 2.5s;
     animation-name: yuh;
     position: relative;
     animation-timing-function: ease;
@@ -72,7 +77,7 @@ h3 {
     text-shadow: 0 0 3px #ffffff;
 }
 h4 {
-    animation-duration: 1s;
+    animation-duration: 2.5s;
     animation-name: yuh;
     position: relative;
     animation-timing-function: ease;
@@ -81,7 +86,7 @@ h4 {
     text-shadow: 0 0 3px #ffffff;
 }
 h5 {
-    animation-duration: 1s;
+    animation-duration: 2.5s;
     animation-name: yuh;
     animation-timing-function: ease;
     position: relative;
@@ -90,7 +95,7 @@ h5 {
     text-shadow: 0 0 3px #ffffff;
 }
 h6 {
-    animation-duration: 1s;
+    animation-duration: 2.5s;
     animation-name: yuh;
     position: relative;
     animation-timing-function: ease;
@@ -99,8 +104,10 @@ h6 {
     text-shadow: 0 0 3px #ffffff;
 }
 @keyframes yuh {
-  from {color: transparent; text-shadow: 0 0 5px transparent;}
-  to {color: white; text-shadow: 0 0 5px #ffffff;}
+   0% {color: transparent; text-shadow: 0 0 5px transparent;}
+  25% {color: white; text-shadow: 0 0 5px #ffffff;}
+  50% {color: white; text-shadow: 0 0 15px #ffffff;}
+  100% {color: white; text-shadow: 0 0 5px #ffffff;}
 }
 </style>
 </head>
