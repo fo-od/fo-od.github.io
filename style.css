@@ -176,6 +176,11 @@ h6 {
     padding: 0px 5px;
     text-align: center;
 }
+.settingsButton[name="cloakButtonTitle"] {
+    height: 52px;
+    padding: 0px 5px;
+    text-align: center;
+}
 .settingsInput:hover {
     transition: all .2s ease-in-out;
     transform: scale(1.01);
