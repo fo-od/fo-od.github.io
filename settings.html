@@ -7,7 +7,18 @@
     <link rel = "stylesheet" href = "/style.css"/>
   </head>
   <body>
-    <h1 style="font-size:50px">Settings</h1>
+    <h1 style="font-size:50px"> 
+    <span
+     class="typer"
+     id="header1"
+     data-words="Settings"
+     data-colors="#30ffac"
+     data-delay="100"
+     data-loop="1">
+  </span>
+  <span class="cursor" data-owner="header1"></span>
+    </h1>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <h3 style = "display:inline-block;">Tab cloaking&nbsp;&nbsp;</h3>
     <label class="switch">
     <input id = "tabtoggle" type="checkbox">
@@ -30,7 +41,7 @@
   position: relative;
   margin-bottom:-8px;
   background: #FF4651;
-  box-shadow: 0 8px 16px -1px rgba(255, 70, 81, 0.2);
+  box-shadow: 0 0px 10px -1px #FF4651;
 }
 .switch input + span:before, .switch input + span:after {
   content: "";
@@ -55,13 +66,14 @@
   transform-origin: 50% 50%;
   background: #fff;
   opacity: 0;
+  box-shadow: 0 0px 10px -1px #30ffac;
 }
 .switch input + span:active {
   transform: scale(0.92);
 }
 .switch input:checked + span {
-  background: #48EA8B;
-  box-shadow: 0 8px 16px -1px rgba(72, 234, 139, 0.2);
+  background: #30ffac;
+  box-shadow: 0 0px 10px -1px #30ffac;
 }
 .switch input:checked + span:before {
   width: 0px;
@@ -174,5 +186,3 @@ html {
     </script>
   </body>
 </html>
-
-
