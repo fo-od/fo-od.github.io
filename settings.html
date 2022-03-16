@@ -6,142 +6,6 @@
     <title>settings</title>
     <link rel="stylesheet" href="/style.css"/>
   </head>
-  <style>
-.switch {
-    cursor: pointer;
-    input {
-        display: none;
-        & + span {
-            width: 48px;
-            height: 28px;
-            border-radius: 14px;
-            transition: all .3s ease;
-            display: block;
-            position: relative;
-            background: #FF4651;
-            box-shadow: 0 0px 10px -1px #FF4651;
-            &:before,
-            &:after {
-                content: '';
-                display: block;
-                position: absolute;
-                transition: all .3s ease;
-            }
-            &:before {
-                top: 5px;
-                left: 5px;
-                width: 18px;
-                height: 18px;
-                border-radius: 9px;
-                border: 5px solid #fff;
-            }
-            &:after {
-                top: 5px;
-                left: 32px;
-                width: 6px;
-                height: 18px;
-                border-radius: 40%;
-                transform-origin: 50% 50%;
-                background: #fff;
-                opacity: 0;
-            }
-            &:active {
-                transform: scale(.92);
-            }
-        }
-        &:checked {
-            & + span {
-                background: #30FFAC;
-                box-shadow: 0 0px 10px -1px #30FFAC;
-                &:before {
-                    width: 0px;
-                    border-radius: 3px;
-                    margin-left: 27px;
-                    border-width: 3px;
-                    background: #fff;
-                }
-                &:after {
-                    animation: blobChecked .35s linear forwards .2s;
-                }
-            }
-        }
-        &:not(:checked) {
-            & + span {
-                &:before {
-                    animation: blob .85s linear forwards .2s;
-                }
-            }
-        }
-    }
-}
-
-@keyframes blob {
-    0%, 100% {
-        transform: scale(1);
-    }
-    30% {
-        transform: scale(1.12, .94);
-    }
-    60% {
-        transform: scale(.96, 1.06);
-    }
-}
-
-@keyframes blobChecked {
-    0% {
-        opacity: 1;
-        transform: scaleX(1);
-    }
-    30% {
-        transform: scaleX(1.44);
-    }
-    70% {
-        transform: scaleX(1.18);
-    }
-    50%,
-    99% {
-        transform: scaleX(1);
-        opacity: 1;
-    }
-    100% {
-        transform: scaleX(1);
-        opacity: 0;
-    }
-}
-
-html {
-    -webkit-font-smoothing: antialiased;
-}
-
-* {
-    box-sizing: border-box;
-    &:before,
-    &:after {
-        box-sizing: border-box;
-    }
-}
-
-// Center & dribbble
-body {
-    min-height: 100vh;
-    font-family: Roboto, Arial;
-    color: #ADAFB6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #F5F9FF;
-    .dribbble {
-        position: fixed;
-        display: block;
-        left: 20px;
-        bottom: 20px;
-        img {
-            display: block;
-            height: 28px;
-        }
-    }
-}
-  </style>
   <body>
     <h1 style="font-size:50px"> 
     <span
@@ -161,6 +25,156 @@ body {
     <span></span>
 </label>
 <a class="dribbble" href="https://dribbble.com/shots/5449131-Switch-animation" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg" alt=""></a>
+<style>
+      .switch {
+  cursor: pointer;
+}
+.switch input {
+  display: none;
+}
+.switch input + span {
+  width: 48px;
+  height: 28px;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  margin-bottom:-8px;
+  background: #FF4651;
+  box-shadow: 0 0px 10px -1px #FF4651;
+}
+.switch input + span:before, .switch input + span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+.switch input + span:before {
+  top: 5px;
+  left: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  border: 5px solid #fff;
+}
+.switch input + span:after {
+  top: 5px;
+  left: 32px;
+  width: 6px;
+  height: 18px;
+  border-radius: 40%;
+  transform-origin: 50% 50%;
+  background: #fff;
+  opacity: 0;
+}
+.switch input + span:active {
+  transform: scale(0.92);
+}
+.switch input:checked + span {
+  background: #30ffac;
+  box-shadow: 0 0px 10px -1px #30ffac;
+}
+.switch input:checked + span:before {
+  width: 0px;
+  border-radius: 3px;
+  margin-left: 27px;
+  border-width: 3px;
+  background: #fff;
+}
+.switch input:checked + span:after {
+  -webkit-animation: blobChecked 0.35s linear forwards 0.2s;
+          animation: blobChecked 0.35s linear forwards 0.2s;
+}
+.switch input:not(:checked) + span:before {
+  -webkit-animation: blob 0.85s linear forwards 0.2s;
+          animation: blob 0.85s linear forwards 0.2s;
+}
+
+@-webkit-keyframes blob {
+  0%, 100% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.12, 0.94);
+  }
+  60% {
+    transform: scale(0.96, 1.06);
+  }
+}
+
+@keyframes blob {
+  0%, 100% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.12, 0.94);
+  }
+  60% {
+    transform: scale(0.96, 1.06);
+  }
+}
+@-webkit-keyframes blobChecked {
+  0% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  30% {
+    transform: scaleX(1.44);
+  }
+  70% {
+    transform: scaleX(1.18);
+  }
+  50%, 99% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 0;
+  }
+}
+@keyframes blobChecked {
+  0% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  30% {
+    transform: scaleX(1.44);
+  }
+  70% {
+    transform: scaleX(1.18);
+  }
+  50%, 99% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 0;
+  }
+}
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+.dribbble {
+  position: fixed;
+  display: block;
+  right: 20px;
+  bottom: 20px;
+}
+.dribbble img {
+  display: block;
+  height: 28px;
+}
+</style>
     <script>
       const toggle = document.querySelector("#tabtoggle") 
      if toggle.checked = localStorage.getItem("checked") {
