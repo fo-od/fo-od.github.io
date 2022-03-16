@@ -112,8 +112,8 @@ h6 {
 }
 .topnav {
   position:relative;
-  margin-top:-10vh;
-  padding-bottom:10vh;
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
 .centertext {
     animation-duration: 2.5s;
@@ -155,6 +155,7 @@ h6 {
     border-style: solid;
     box-shadow: 0 0 8px #30ffac;
     transition: all .2s ease-in-out;
+    text-align: center;
 }
 .settingsButton:hover {
     transition: all .2s ease-in-out;
