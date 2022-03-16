@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Courier New, Roboto Mono, monospaced; font-size: 22px;
     color: #ffffff;
