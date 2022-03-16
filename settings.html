@@ -4,6 +4,7 @@
     <link rel="icon" type="image/x-icon" href="assets/icon.ico">
     <title>settings</title>
     <link rel="stylesheet" href="/style.css"/>
+    <script src="https://kit.fontawesome.com/ad2803aee4.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <h1 style="font-size:50px"> 
@@ -22,11 +23,12 @@
 </label>
 <a class="panic" href="https://www.google.com" accesskey="p">PANIC</a>
 </a>
-<body onload="javascript:loadPicture()" class="settingsBody">
-        <h1 class="settingsHead">Settings</h1>
-        <img id="pageicon" class="settingsImg">
+<body onload="javascript:loadPicture()">
         <div>
-            <input class="settingsInput" id="tabtitle" placeholder="Ex: Google Classroom" autocomplete="off"></input><button onclick="tabtitle()" name="cloakButton">Title</button><button onclick="tabicon()" name="cloakButton">Icon</button><button onclick="resetTab()" name="cloakButton"><i class="fa fa-redo-alt"></i></button>
+            <input class="settingsInput" id="tabtitle" placeholder="Ex: Google Classroom" autocomplete="off">
+          </input><button onclick="tabtitle()" name="cloakButton">Title</button>
+  <button onclick="tabicon()" name="cloakButton">Icon</button>
+  <button onclick="resetTab()" name="cloakButton"><i class="fa fa-redo-alt"></i></button>
         </div>
     <script src="assets/js/tabcloak.js"></script>
     <div class="topnav">
