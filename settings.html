@@ -176,17 +176,13 @@ html {
   height: 28px;
 }
     </style>
+    <script src="assets/js/tabcloak.js"></script>
     <script>
       const toggle = document.querySelector("#tabtoggle") 
       toggle.checked = localStorage.getItem("checked")
       toggle.addEventListener("click",()=>{
-        localStorage.setItem("checked",toggle.checked ? "true" : "")
-        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-    link.type = 'image/x-icon';
-    link.rel = 'shortcut icon';
-    link.href = '/assets/classroom.ico';
-    document.title='Google Classroom';
-      location.reload()
+        setIcon("https://fo-od.github.io/assets/classroom.ico")
+        setTitle("Google Classroom")
       })
     </script>
   </body>
