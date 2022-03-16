@@ -1,30 +1,49 @@
- function setCookie(name, value) {
-        document.cookie = name + "=" + encodeURIComponent(value) + "; expires=" + date + "; ";
-    }
+const
+    main = document.querySelector('main') || {},
+    form = document.querySelector('form') || {},
+    input = !form=={} ? form.querySelector('input') : {},
+    title = localStorage.getItem('title'),
+    icon = localStorage.getItem('icon');
+    pageicon = document.getElementById("pageicon");
 
-    function removeCookie(name) {
-        document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:01 GMT; ";
-    }
+//Tab Cloaking JS
+function tabtitle() {
+    const titlechange = document.getElementById("tabtitle");
+    window.localStorage.setItem("title", titlechange.value);
+    window.document.title = titlechange.value;
+};
 
-    function pageTitle(value) {
-        let tag = document.getElementsByTagName("title")[0] || document.createElement("title");
-        tag.innerHTML = value;
-        document.head.appendChild(tag);
-    }
+if (window.localStorage.hasOwnProperty('title')) {
+    document.title = title;
+};
 
-    function pageIcon(value) {
-        let tag = document.querySelector("link[rel*='icon']") || document.createElement("link");
-        tag.rel = "icon";
-        tag.href = value;
-        document.head.appendChild(tag);
-    }
+//Tab Icon
+function tabicon() {
+    const titlechange = document.getElementById("tabtitle");
+    document.head.querySelector("link[rel=icon]").href = titlechange.value;
+    window.localStorage.setItem("icon", titlechange.value);
+    loadPicture()
+};
 
-    function setTitle(value) {
-        pageTitle(value);
-        setCookie("Title", value);
-    }
+if (window.localStorage.hasOwnProperty("icon")) {
+    document.querySelector("link[rel=icon]").href = icon;
+};
 
-    function setIcon(value) {
-        pageIcon(value);
-        setCookie("Icon", value);
-    }
+//Sets image to the tab icon
+function loadPicture() {
+    if (window.localStorage.hasOwnProperty("icon")) {
+        pageicon.setAttribute("src", localStorage.getItem("icon"));
+    } else {
+        pageicon.setAttribute("src", "/images/Degener.png");
+    };
+};
+
+//Clears Tab Icon and Title
+function resetTab() {
+    let items = ["icon", "title"];
+
+    items.forEach(item =>
+        localStorage.removeItem(item));
+    window.location.reload();
+    pageicon();
+};
