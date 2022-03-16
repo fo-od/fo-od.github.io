@@ -33,7 +33,7 @@ a {
     text-shadow: 0 0 4px #30ffac;
     transition-duration: 1s;
 }
-a:hover {
+a:hover:after {
     text-shadow: 0 0 8px #30ffac;
 }
 @keyframes btn {
