@@ -103,4 +103,10 @@ h6 {
   50% {color: white; text-shadow: 0 0 15px #ffffff;}
   100% {color: white; text-shadow: 0 0 5px #ffffff;}
 }
-
+.panic {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #30ffac;
+  text-shadow: 0 0 4px #30ffac;
+}
