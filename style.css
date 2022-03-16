@@ -110,8 +110,18 @@ h6 {
   color: #30ffac;
   text-shadow: 0 0 4px #30ffac;
 }
-.topnav{
+.topnav {
   position:relative;
   margin-top:-10vh;
   padding-bottom:10vh;
+}
+.centertext {
+    animation-duration: 2.5s;
+    animation-name: yuh;
+    position: relative;
+    animation-timing-function: ease;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    text-shadow: 0 0 3px #ffffff;
+    text-align: center;
 }
