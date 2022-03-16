@@ -27,11 +27,14 @@
 <a class="dribbble" href="https://dribbble.com/shots/5449131-Switch-animation" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg" alt=""></a>
     <script>
       const toggle = document.querySelector("#tabtoggle") 
-      toggle.checked = localStorage.getItem("checked")
+     if toggle.checked = localStorage.getItem("checked") {
       toggle.addEventListener("click",()=>{
         setIcon("https://fo-od.github.io/assets/classroom.ico")
         setTitle("Google Classroom")
-      })
+      })} else {
+      removeCookie("Title")
+      removeCookie("Icon")
+      )
     </script>
     <script src="assets/js/tabcloak.js"></script>
   </body>
