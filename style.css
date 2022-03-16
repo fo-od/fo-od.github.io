@@ -138,6 +138,7 @@ h6 {
     border-width: 1px;
     border-style: solid;
     box-shadow: 0 0 8px #30ffac;
+    transition: all .2s ease-in-out;
 }
 .settingsButton {
     width: 90px;
@@ -153,4 +154,20 @@ h6 {
     cursor: pointer;
     border-style: solid;
     box-shadow: 0 0 8px #30ffac;
+    transition: all .2s ease-in-out;
+}
+.settingsButton:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.settingsButton[name="cloakButton"] {
+    width: 50px;
+    height: 52px;
+    padding: 0px 5px;
+    margin-left: 5px;
+}
+.settingsInput:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.01);
 }
