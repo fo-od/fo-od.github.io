@@ -111,7 +111,7 @@ $green: #30FFAC;
     cursor: pointer;
     input {
         display: none;
-        &:unchecked + span {
+        & + span {
             width: 48px;
             height: 28px;
             border-radius: 14px;
