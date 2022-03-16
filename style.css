@@ -40,10 +40,10 @@ a:hover:after {
     text-shadow: 0 0 8px #30ffac;
 }
 @keyframes btn {
-  0% {border: 2px solid transparent; color: transparent; box-shadow: 0 0 3px transparent; text-shadow: 0 0 0px white;}
-  25% {border: 2px solid #30ffac; color: white; box-shadow: 0 0 3px #30ffac; text-shadow: 0 0 5px white;}
-  50% {box-shadow: 0 0 10px #30ffac; text-shadow: 0 0 15px white;}
-  100% {box-shadow: 0 0 3px #30ffac; text-shadow: 0 0 5px white;}
+  0% {border: 2px solid transparent; color: transparent; box-shadow: 0 0 3px transparent;}
+  25% {border: 2px solid #30ffac; color: white; box-shadow: 0 0 3px #30ffac;}
+  50% {box-shadow: 0 0 10px #30ffac;}
+  100% {box-shadow: 0 0 3px #30ffac;}
 }
 @keyframes link {
    0% {color: transparent; text-shadow: 0 0 0px transparent;}
@@ -177,6 +177,7 @@ h6 {
     text-align: center;
 }
 .settingsButton[name="cloakButtonTitle"] {
+    width: 55px;
     height: 52px;
     padding: 0px 5px;
     text-align: center;
