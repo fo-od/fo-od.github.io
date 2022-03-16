@@ -125,3 +125,32 @@ h6 {
     text-shadow: 0 0 3px #ffffff;
     text-align: center;
 }
+.settingsInput {
+    width: 50%;
+    height: 50px;
+    padding: 0px 5px;
+    color:  white;
+    font-family: 'Courier New';
+    background: #1f1f1f;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: #30ffac;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0 0 8px #30ffac;
+}
+.settingsButton {
+    width: 90px;
+    height: 50px;
+    color: white;
+    padding: 0px 5px;
+    font-size: 15px;
+    font-family: 'Courier New';
+    background: #1f1f1f;
+    border-radius: 5px;
+    border-color: #30ffac;
+    border-width: 1px;
+    cursor: pointer;
+    border-style: solid;
+    box-shadow: 0 0 8px #30ffac;
+}
