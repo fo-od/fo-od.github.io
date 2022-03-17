@@ -114,11 +114,12 @@ h6 {
   text-shadow: 0 0 4px #30ffac;
 }
 .topnav {
-  margin: auto;
-  position:relative;
+  margin: 0;
+  position: absolute;
   margin-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .centertext {
     animation-duration: 2.5s;
