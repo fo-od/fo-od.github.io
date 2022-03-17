@@ -114,6 +114,7 @@ h6 {
   text-shadow: 0 0 4px #30ffac;
 }
 .topnav {
+  margin: auto;
   position:relative;
   margin-top: 10px;
   padding-bottom: 10px;
