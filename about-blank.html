@@ -20,13 +20,13 @@
         <h1>about:blank</h1>
         <div>
           <p>Enter a URL you want to be opened in a about:blank page below:</p>
-          <p><input id="url-target" value="" autocomplete="on" type="text" autofocus /></p>
+          <p><input class="settingsInput" id="url-target" value="" autocomplete="on" type="text" autofocus /></p>
           <p>Please make sure you have the https:// on the URL, it is best to just copy the link from the actual search bar!</p>
         </div>
       </div>
       <div>
-        <button id="create">Create page</button>
-        <button onclick="document.getElementById('url-target').value = ''">Clear input</button>
+        <button class="settingsButton" id="create">Create page</button>
+        <button class="settingsButton" onclick="document.getElementById('url-target').value = ''">Clear input</button>
       </div>
       <p>Made by <a href="https://3kh0.github.io">3kh0</a>.</p>
       <button onclick="alert('Hello there!\n\nIf you clicked then you are wondering what this is, I can explain. So at our school, teachers have this tool called Dyknow that can screenshot the contents of the page and use it so the teacher knows what we are doing, by embedding a page into a system page (about:blank is counted as a system page), Dyknow can not screenshot or even tell the teacher what we are on! This will not unblock things but it is a start!');">What is this?</button>
