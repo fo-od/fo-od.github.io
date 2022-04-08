@@ -62,7 +62,7 @@ h2 {
     animation-name: yuh;
     position: relative;
     animation-timing-function: ease;
-    animation-delay: 1.51s;
+    animation-delay: 1.5s;
     animation-fill-mode: both;
     text-shadow: 0 0 3px #ffffff;
 }
@@ -71,7 +71,7 @@ h3 {
     animation-name: yuh;
     position: relative;
     animation-timing-function: ease;
-    animation-delay: 1.53s;
+    animation-delay: 1.5s;
     animation-fill-mode: both;
     text-shadow: 0 0 3px #ffffff;
 }
@@ -80,7 +80,7 @@ h4 {
     animation-name: yuh;
     position: relative;
     animation-timing-function: ease;
-    animation-delay: 1.55s;
+    animation-delay: 1.5s;
     animation-fill-mode: both;
     text-shadow: 0 0 3px #ffffff;
 }
@@ -89,7 +89,7 @@ p {
     animation-name: yuh;
     position: relative;
     animation-timing-function: ease;
-    animation-delay: 1.56s;
+    animation-delay: 1.54s;
     animation-fill-mode: both;
     text-shadow: 0 0 3px #ffffff;
 }
@@ -98,7 +98,7 @@ h5 {
     animation-name: yuh;
     animation-timing-function: ease;
     position: relative;
-    animation-delay: 1.57s;
+    animation-delay: 1.5s;
     animation-fill-mode: both;
     text-shadow: 0 0 3px #ffffff;
 }
@@ -107,7 +107,7 @@ h6 {
     animation-name: yuh;
     position: relative;
     animation-timing-function: ease;
-    animation-delay: 1.59s;
+    animation-delay: 1.5s;
     animation-fill-mode: both;
     text-shadow: 0 0 3px #ffffff;
 }
