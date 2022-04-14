@@ -40,22 +40,12 @@
       <button onclick="alert('Hello there!\n\nIf you clicked then you are wondering what this is, I can explain. So at our school, teachers have this tool called Dyknow that can screenshot the contents of the page and use it so the teacher knows what we are doing, by embedding a page into a system page (about:blank is counted as a system page), Dyknow can not screenshot or even tell the teacher what we are on! This will not unblock things but it is a start!');">What is this?</button>
     </div>
     <script>
-    var url2 = document.getElementById("url-target");
-    var urlr = toString(url2);
-    function urlcheck (txt, wrd) {
-    	var text = toString(txt);
-        var output = txt.startsWith(wrd);
-        
-        if (output == true){
-        	return toString(output);
-        } else {
-        	return toString(output + text);
-        }
-    };
-      var urlr2 = urlcheck(urlr, "https://");
-      var url = toString(urlr2);
+      var url = document.getElementById("url-target");
       var urlObj = new window.URL(window.location.href);
       document.getElementById("create").onclick = function () {
+        if (url.value.substring(0, 8) !== 'https://') {
+    		url.value = 'https://' + url.value;
+        }
         win = window.open();
         win.document.body.style.margin = "0";
         win.document.body.style.height = "100vh";
@@ -71,6 +61,7 @@
         var script = win.document.createElement("script");
         script.src = "../assets/js/main.js";
         win.document.body.appendChild(script);
+        console.log(url.value);
       };
     </script>
     <script src="../assets/js/main.js"></script>
