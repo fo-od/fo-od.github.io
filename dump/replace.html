@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script src="https://kit.fontawesome.com/e8faabaa7c.js" crossorigin="anonymous"></script>
+<link rel="icon" type="image/x-icon" href="/assets/icon.ico" />
+<link rel="stylesheet" href="/style.css">
+<title>replace | food's stuff</title>
+<script>
+    function strReplace(){
+        var myStr = document.getElementById("txt").value;
+        var newStr = myStr.replace(/"/g, "\'");
+        
+        document.getElementById("newtxt").value = newStr;
+    }
+</script>
+</head>
+<body>
+  <div class="topnav">
+      <button onClick="window.open('https://fo-od.github.io', '_self');", class="button">Home</button>
+      
+      <button onClick="window.open('https://fo-od.github.io/misc', '_self');", class="button">Miscellaneous</button>
+      
+      <button onClick="window.open('https://fo-od.github.io/settings', '_self');", class="button">Settings</button>
+</div>
+<a class="panic" href="https://www.google.com" accesskey="p">PANIC</a>
+<script src="assets/js/tabcloak.js"></script>
+  <div>
+  Input <textarea id="txt"></textarea><br><br>
+  	Output <textarea id="newtxt"></textarea><br><br>
+    <button type="button" onclick="strReplace();">Replace</button>
+  </div>
+</body>
+</html>
