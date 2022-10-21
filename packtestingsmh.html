@@ -129,6 +129,9 @@ body {
   padding-bottom: 10px;
 }
 </style>
+<script>
+function placeholderfunc () {alert("this would normally do something!!!!! (but it doesnt)");}
+</script>
 </head>
 <body>
 <div class="spacing">
@@ -139,8 +142,8 @@ body {
 	<div class="flex-container"> <!╌ begin pack selection ╌>
       <div class="pack container">
         <div class="pack-tile">
-          <img class="pack-icon" src="https://via.placeholder.com/128" alt="icon" loading="lazy" />
-          <button class="pack-title">Pack Name</button>
+          <input type="image" class="pack-icon" src="https://via.placeholder.com/128" alt="icon" loading="lazy" onClick="placeholderfunc();"/>
+          <h1 class="pack-title">Pack Name</h1>
         </div>
       </div>
 	</div> <!╌ end of pack selection ╌>
