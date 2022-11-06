@@ -97,9 +97,8 @@ body {
   display: flex;
   flex-direction: row;
   border-radius: 7px;
-  order: 0;
-  flex-grow: 0;
   flex-wrap: wrap;
+  order: 0;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -108,9 +107,14 @@ body {
   box-shadow: 0px 0px 12px white;
   border: 1px solid white;
   overflow: auto;
-  min-height: min-content;
-  height: 90vh;
-  width: 80vw;
+  padding: 10px;
+  height: 70vh;
+  width: 90vw;
+  gap: 10px;
+}
+
+.flex-container::-webkit-scrollbar{
+  display: none;
 }
 .container {
   padding: 10px;
@@ -120,7 +124,7 @@ body {
   border: 1px solid white;
   background-color: rgba(30,30,30,0.4);
   box-shadow: 0px 0px 12px white;
-  width: 70%;
+  width: 70vw;
   margin: auto;
 }
 .text-center {
@@ -138,7 +142,7 @@ body {
 }
 </style>
 <script>
-function placeholderfunc () {alert("this would normally do something!!!!! (but it doesnt)");}
+function placeholderfunc () {alert("this would normally do something!!!!! (but it doesnt yet)");}
 </script>
 </head>
 <body>
@@ -147,8 +151,8 @@ function placeholderfunc () {alert("this would normally do something!!!!! (but i
 <h1 class="text-center">Choose a Resource Pack</h1>
 </div>
   </div>
-	<div class="flex-container">
-      <div class="pack container">
+	<div class="pack container">
+      <div class="flex-container">
         <div class="pack-tile">
           <input type="image" class="pack-icon" src="https://via.placeholder.com/128" alt="icon" loading="lazy" onClick="placeholderfunc();"/>
           <h1 class="pack-title">1.19 PvP</h1>
