@@ -12,10 +12,6 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-.pack {
-  height: 250px;
-  width: 200px;
-}
 .pack-tile {
   background-color: rgba(30, 30, 30, .4);
   height: 250px;
@@ -98,14 +94,16 @@ body::-webkit-scrollbar {
 }
 .pack-title {
   font-size: 20px;
-  color: #6853f0;
+  color: white;
   text-align: center;
   margin: 10px;
   transition: color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+/*
 .pack-tile:not(:hover) .pack-title {
   color: white;
 }
+*/
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -127,9 +125,6 @@ body::-webkit-scrollbar {
 }
 .flex-container::-webkit-scrollbar{
   display: none;
-}
-.container {
-  padding: 10px;
 }
 .title {
   border-radius: 5px;
