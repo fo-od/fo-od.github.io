@@ -94,7 +94,7 @@ body::-webkit-scrollbar {
 }
 .pack-title {
   font-size: 20px;
-  color: white;
+  color: #6853f0;
   text-align: center;
   margin: 10px;
   transition: color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -106,8 +106,6 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
   border-radius: 7px;
-  flex-wrap: wrap;
-  order: 0;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -117,7 +115,7 @@ body::-webkit-scrollbar {
   border: 1px solid white;
   overflow: auto;
   padding: 10px;
-  height: 85vh;
+  height: 300px;
   width: 90vw;
   gap: 10px;
 }
