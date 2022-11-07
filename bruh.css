@@ -99,11 +99,9 @@ body::-webkit-scrollbar {
   margin: 10px;
   transition: color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-/*
 .pack-tile:not(:hover) .pack-title {
   color: white;
 }
-*/
 .flex-container {
   display: flex;
   flex-direction: row;
