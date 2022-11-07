@@ -146,9 +146,3 @@ body::-webkit-scrollbar {
   margin: auto;
   overflow-wrap: anywhere;
 }
-.fit-again {
-  font-size: 18px;
- }
-.spacing {
-  padding-bottom: 10px;
-}
