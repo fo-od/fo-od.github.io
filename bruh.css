@@ -5,6 +5,9 @@ body {
   color: #ffffff;
   text-align: left;
   background-color: #1e2026;
+  background-repeat: no-repeat;
+  background-image: url("https://resclientfps.vercel.app/bruh.jpg");
+  background-size: cover;
 }
 body::-webkit-scrollbar {
   display: none;
