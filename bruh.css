@@ -124,7 +124,18 @@ body::-webkit-scrollbar {
 	position: relative;
 }
 .flex-container::-webkit-scrollbar {
-	display: none;
+  width: 5px
+}
+.flex-container::-webkit-scrollbar-track {
+  display: none;
+}
+.flex-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.6); 
+  border-radius: 7px;
+}
+.flex-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7); 
+  border-radius: 7px;
 }
 .title {
 	border-radius: 5px;
