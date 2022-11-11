@@ -109,6 +109,7 @@ body::-webkit-scrollbar {
 	flex-direction: row;
 	border-radius: 7px;
 	order: 0;
+	background-color: rgba(30, 30, 30, 0.35);
 	margin: auto;
 	align-items: center;
 	justify-content: left;
