@@ -2,4 +2,4 @@
 
 ### so yeah check it out its cool 😎
 
-[here it is](https://fo-od.github.com)
+[here it is](https://fo-od.github.io)
